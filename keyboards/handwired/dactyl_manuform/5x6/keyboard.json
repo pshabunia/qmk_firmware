@@ -20,7 +20,9 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": false,
+        "ps2": false,
+        "ps2_mouse": false
     },
     "qmk": {
         "locking": {
