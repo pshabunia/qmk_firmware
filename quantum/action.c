@@ -330,6 +330,7 @@ void register_mouse(uint8_t mouse_keycode, bool pressed) {
     switch (mouse_keycode) {
 #    if defined(PS2_MOUSE_ENABLE) || defined(POINTING_DEVICE_ENABLE)
         case KC_MS_BTN1 ... KC_MS_BTN8:
+            mousekey_send();
             // let pointing device handle the buttons
             // expand if/when it handles more of the code
 #        if defined(POINTING_DEVICE_ENABLE)
