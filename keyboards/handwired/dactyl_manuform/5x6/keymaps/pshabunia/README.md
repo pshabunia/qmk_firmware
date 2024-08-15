@@ -1,16 +1,7 @@
 # QMK config for Dactyl Manuform 5x6
 
 ## Prerequisites
-
-TODO: migrate to `brew install qmk/qmk/qmk`
-
-```shell
-ports install dfu-utils avr-gcc avr-libc
-pyenv virtualenv trackpoint
-pyenv activate trackpoint
-pip install qmk
-qmk setup
-```
+Read the docs, install QMK
 
 ## Flashing
 ```shell
