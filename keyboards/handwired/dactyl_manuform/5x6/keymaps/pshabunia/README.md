@@ -1,24 +1,19 @@
 # QMK config for Dactyl Manuform 5x6
 
-Dactyl Manuform in 5x6 layout with myr4x5 keymap plus trackpoint. Left hand part is powered by ATMega32u4. The right hand is running EliteC.
+Because of the trackpoint the right hand side needs EliteC (pins D2 and D5). Left hand side is (still) powered by ProMicro.
 
-
-## Prerequisites
-[Install QMK](https://docs.qmk.fm/#/getting_started_build_tools) if you have not.
-
-
-## Flashing
-```shell
-# Right (EliteC / DFU)
-make handwired/dactyl_manuform/5x6:pshabunia:dfu
-# Left (ATMega / AVR)
-make handwired/dactyl_manuform/5x6:pshabunia:avrdude
-```
-
-## Handedness
+## EEPROM Handedness
 ```shell
 # Right
 make handwired/dactyl_manuform/5x6:pshabunia:dfu-split-right
 # Left  
 make handwired/dactyl_manuform/5x6:pshabunia:avrdude-split-left
+```
+
+## Flashing
+```shell
+# Right (EliteC / DFU)
+make handwired/dactyl_manuform/5x6:pshabunia:dfu
+# Left (ProMicro / AVR)
+make handwired/dactyl_manuform/5x6:pshabunia:avrdude
 ```
